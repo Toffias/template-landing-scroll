@@ -1,0 +1,64 @@
+{
+  "$comment": "Single source of truth for one scroll world. Paths are relative to this folder. See AGENTS.md → 'Flujo de un proyecto'.",
+  "brand": { "name": "Marca" },
+  "camera": "fly-through",
+  "mobile": false,
+  "page": { "slug": "home", "title": "Inicio" },
+  "stylePreamble": "Soft matte low-poly clay diorama, isometric, tilt-shift miniature, warm soft light, gentle ambient occlusion, pastel palette",
+  "palette": { "bg": "#F5EDE0", "ink": "#241D2B", "accent": "#8A7BB5", "extra": ["#8FB98A", "#E8A87C"] },
+  "settings": {
+    "diveScroll": 1.3,
+    "connScroll": 0.9,
+    "crossfade": 0.12,
+    "hint": "scrolleá para entrar",
+    "theme": { "background": "#F5EDE0", "ink": "#241D2B", "inkSoft": "#6A6072", "accent": "#8A7BB5" }
+  },
+  "sections": [
+    {
+      "id": "escena-1",
+      "label": "Escena 1",
+      "accent": "#8FB98A",
+      "eyebrow": "Eyebrow corto",
+      "title": "Titular de la primera escena (será el H1).",
+      "body": "Una línea de cuerpo que explica el beneficio, no la característica.",
+      "tags": ["Etiqueta", "Etiqueta"],
+      "subject": "Qué hay DENTRO de este diorama (para el prompt de la imagen).",
+      "focal": "El punto hacia el que entra la cámara.",
+      "still": "stills/escena-1.png",
+      "clip": "raw/dive_0.mp4",
+      "clipMobile": null,
+      "scroll": 1.6,
+      "linger": 0.4
+    },
+    {
+      "id": "escena-2",
+      "label": "Escena 2",
+      "accent": "#E8A87C",
+      "eyebrow": "Eyebrow",
+      "title": "Titular de la escena final.",
+      "body": "Cierre con la promesa y la acción.",
+      "tags": [],
+      "subject": "Producto héroe en su contexto.",
+      "focal": "El producto.",
+      "still": "stills/escena-2.png",
+      "clip": "raw/dive_1.mp4",
+      "clipMobile": null,
+      "scroll": 1.6,
+      "linger": 0.3,
+      "cta": {
+        "primary": { "label": "Empezar", "href": "/contact" },
+        "secondary": { "label": "Ver el blog", "href": "/posts" }
+      }
+    }
+  ],
+  "connectors": ["raw/conn_0.mp4"],
+  "connectorsMobile": [],
+  "faq": [
+    { "question": "¿Pregunta real que hace un cliente?", "answer": "Respuesta directa primero (40–80 palabras), luego contexto." }
+  ],
+  "seo": {
+    "title": "Título SEO (≤ 60 caracteres)",
+    "description": "Meta description de 120–160 caracteres con la propuesta de valor y la keyword principal."
+  },
+  "budget": { "approved": false, "estimate": "", "notes": "" }
+}

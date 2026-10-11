@@ -1,0 +1,36 @@
+build
+dist / media
+node_modules
+.DS_Store
+.env
+.next
+next-env.d.ts
+.vercel
+
+# Payload default media upload directory
+public/media/
+
+public/robots.txt
+public/sitemap*.xml
+
+
+# Playwright
+node_modules/
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+
+# SQLite database (local dev)
+*.db
+*.db-journal
+
+# scroll-world working files: raw AI renders, extracted frames and encodes are
+# large and reproducible — only world.json + prompts are versioned.
+world/*/raw/
+world/*/frames/
+world/*/dist/
+world/*/stills/
+
+# TypeScript incremental cache
+*.tsbuildinfo

@@ -1,0 +1,53 @@
+{
+  "$comment": "Procedural demo world. `pnpm world:demo` renders raw/ (no AI credits), then `pnpm world:encode world/demo` + `pnpm world:import world/demo` exercise the real pipeline into the page /demo.",
+  "brand": { "name": "Scroll World" },
+  "camera": "fly-through",
+  "mobile": false,
+  "page": { "slug": "demo", "title": "Demo del pipeline" },
+  "settings": {
+    "diveScroll": 1.4,
+    "connScroll": 0.8,
+    "crossfade": 0.12,
+    "hint": "scrolleá",
+    "theme": { "background": "#0b0d1a", "ink": "#f4f1ea", "inkSoft": "#a9a6b8", "accent": "#7c9cff" }
+  },
+  "sections": [
+    {
+      "id": "origen",
+      "label": "Origen",
+      "accent": "#7c9cff",
+      "eyebrow": "Paso 1",
+      "title": "Clips importados por el pipeline.",
+      "body": "Esta página la creó pnpm world:import a partir de world/demo/world.json.",
+      "tags": ["world:encode", "world:import"],
+      "clip": "raw/dive_0.mp4",
+      "scroll": 1.6,
+      "linger": 0.35
+    },
+    {
+      "id": "proceso",
+      "label": "Proceso",
+      "accent": "#ff9f6b",
+      "eyebrow": "Paso 2",
+      "title": "Conectores desde fotogramas reales.",
+      "body": "Cada conector empieza en el último frame del clip anterior y termina en el primero del siguiente.",
+      "clip": "raw/dive_1.mp4"
+    },
+    {
+      "id": "producto",
+      "label": "Producto",
+      "accent": "#e48bff",
+      "eyebrow": "Paso 3",
+      "title": "Revisá y publicá desde el admin.",
+      "body": "Por defecto se importa como borrador para que alguien lo apruebe.",
+      "clip": "raw/dive_2.mp4",
+      "cta": { "primary": { "label": "Ir al admin", "href": "/admin" } }
+    }
+  ],
+  "connectors": ["raw/conn_0.mp4", "raw/conn_1.mp4"],
+  "connectorsMobile": [],
+  "seo": {
+    "title": "Demo del pipeline scroll-world",
+    "description": "Página generada automáticamente por el pipeline de importación del template Scroll World."
+  }
+}
